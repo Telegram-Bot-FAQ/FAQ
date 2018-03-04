@@ -18,7 +18,6 @@
 + Kotlin: 
   - [kotlogram](https://github.com/badoualy/kotlogram)  
 + JavaScript: 
-  - [telegraf](https://github.com/telegraf/telegraf)
   - [telegram-mtproto](https://github.com/zerobias/telegram-mtproto)  
 + C: 
   - [tg](https://github.com/vysheng/tg)
@@ -54,6 +53,7 @@
 + Haskell
   - [haskell-telegram-api](https://github.com/klappvisor/haskell-telegram-api)
 + JavaScript
+  - [telegraf](https://github.com/telegraf/telegraf)
   - [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api)
 
 ### Лимиты Telegram Bot API
