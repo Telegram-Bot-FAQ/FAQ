@@ -18,6 +18,7 @@
 + Kotlin: 
   - [kotlogram](https://github.com/badoualy/kotlogram)  
 + JavaScript: 
+  - [telegraf](https://github.com/telegraf/telegraf)
   - [telegram-mtproto](https://github.com/zerobias/telegram-mtproto)  
 + C: 
   - [tg](https://github.com/vysheng/tg)
@@ -31,7 +32,31 @@
 + Go: 
   - [mtproto](https://github.com/sdidyk/mtproto)  
 
-## Лимиты Telegram Bot API
+## Telegram Bot API
+### Список популярных библиотек:
++ Python
+  - [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot)
+  - [twx.botapi](https://github.com/datamachine/twx.botapi)
+  - [Telepot](https://github.com/nickoala/telepot)
+  - [Telegram Bot Service](https://github.com/sourcesimian/txTelegramBot)
+  - [telebot](https://github.com/yukuku/telebot)
+  - [aiogram](https://github.com/aiogram/aiogram)
++ Java
+  - [TelegramBots](https://github.com/rubenlagus/TelegramBots)
++ C#
+  - [Telegram.bot](https://github.com/TelegramBots/Telegram.Bot)
++ Ruby
+  - [TelegramBot](https://github.com/eljojo/telegram_bot)
++ Go
+  - [TBotAPI](https://github.com/mrd0ll4r/tbotapi)
++ Lua
+  - [lua-telegram-bot](https://github.com/cosmonawt/lua-telegram-bot)
++ Haskell
+  - [haskell-telegram-api](https://github.com/klappvisor/haskell-telegram-api)
++ JavaScript
+  - [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api)
+
+### Лимиты Telegram Bot API
 
 + Сообщения:
   - При отправке сообщений внутри определенного чата избегайте отправки более одного сообщения в секунду. Telegram может разрешить короткие всплески, которые превышают этот предел, но в итоге вы начнете получать 429 ошибку.
