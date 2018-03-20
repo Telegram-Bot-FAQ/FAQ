@@ -49,7 +49,7 @@
 "​​<a href="ссылка_на_картинку">&#8203;</a>
 Lorem ipsum dolor sit amet..."
 ```
-![Hidden link](http://telegra.ph/file/710a5455ca5a1e09d7be7.png)
+![Hidden link](http://telegra.ph/file/ef107beda6880867f0348.png)
 
 #### Бесплатный хостинг картинок
 POST HTTP запрос `http://telegra.ph/upload`
@@ -75,6 +75,7 @@ with open('/Users/python273/Desktop/123345.jpeg', 'rb') as f:
 
 #### Убираем часики на inline-кнопках
 ![answerCallbackQuery](http://telegra.ph/file/b61e25a0a3f81f157eecf.png)
+
 Причина возникновения этих часиков - ожидание Телеграмом ответа от бота после нажатия пользователем на кнопку. Чтобы убрать эти часики после обработки нажатия, нужно вызвать метод [answerCallbackQuery](https://core.telegram.org/bots/api#answercallbackquery)
 
 ### Лимиты Telegram Bot API
@@ -87,8 +88,7 @@ with open('/Users/python273/Desktop/123345.jpeg', 'rb') as f:
    - Также обратите внимание, что ваш бот не сможет отправлять более 20 сообщений в минуту в одну группу.
  + Файлы:
  	- Максимальный размер файла для скачивания 20 MB.
-
-  - Максимальный размер файла для загрузки (отправки) 50 MB.
+    - Максимальный размер файла для загрузки (отправки) 50 MB.
 
 
 
