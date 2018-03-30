@@ -58,7 +58,7 @@
 "​​<a href="ссылка_на_картинку">&#8203;</a>
 Lorem ipsum dolor sit amet..."
 ```
-![](http://telegra.ph/file/710a5455ca5a1e09d7be7.png)
+![](http://telegra.ph/file/ef107beda6880867f0348.png)
 
 #### Бесплатный хостинг картинок
 POST HTTP запрос `http://telegra.ph/upload`
