@@ -1,30 +1,35 @@
 ## Telegram Bot API
-Боты — специальные аккаунты в Telegram, созданные для того, чтобы автоматически обрабатывать и отправлять сообщения. Пользователи могут взаимодействовать с ботами при помощи сообщений, отправляемых через обычные или групповые чаты. Логика бота контролируется при помощи HTTPS запросов к [API для ботов](https://api.telegram.org)
+Боты — специальные аккаунты в Telegram, созданные для того, чтобы автоматически обрабатывать и отправлять сообщения. 
+Пользователи могут взаимодействовать с ботами при помощи сообщений, отправляемых через обычные или групповые чаты. 
+Логика бота контролируется при помощи HTTPS запросов к [API для ботов](https://api.telegram.org)
 
 **НЕОФИЦИАЛЬНЫЙ** вольный перевод о том, что из себя представляют боты https://tlgrm.ru/docs/bots
 
 ### Полезные ссылки:
-- Официальная актуальная английская документация https://core.telegram.org/bots/api
+- Официальная актуальная английская документация по методам API: https://core.telegram.org/bots/api
 
   (плохо с английским - идём за переводчиком http://translate.google.com)
 
-- Текстовые уроки "Пишем бота для Telegram на языке Python" с использованием библиотеки [pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI)
+- Текстовые уроки "Пишем бота для Telegram на языке Python" с использованием библиотеки [pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI):
 
  https://groosha.gitbooks.io/telegram-bot-lessons/content/
 
-- Текстовые уроки "Асинхронный Telegram бот на языке Python 3" с использованием библиотеки [aiogram](https://github.com/aiogram/aiogram)
+- Текстовые уроки "Асинхронный Telegram бот на языке Python 3" с использованием библиотеки [aiogram](https://github.com/aiogram/aiogram):
 
  https://surik00.gitbooks.io/aiogram-lessons/content/
 
 ### Список популярных библиотек:
  + Python
-   - [pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI)
-   - [aiogram](https://github.com/aiogram/aiogram)
+   - [pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI) - отлично подходит для начинающих, желающих понять основы работы с Bot API. Имеет подробную документацию (на английском языке) и обширную аудиторию.
+   - [aiogram](https://github.com/aiogram/aiogram) - продвинутая библиотека для создания высокопроизводительных ботов. Библиотека постоянно обновляется и имеет крутые фишки, например [FSM](https://ru.wikipedia.org/wiki/Конечный_автомат), установку стандартного типа разметки и прочие полезные мелочи, полезные при разработке. Аудитория пользователей библиотеки на данный момент небольшая.
    - [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot)
    - [twx.botapi](https://github.com/datamachine/twx.botapi)
    - [Telepot](https://github.com/nickoala/telepot)
    - [Telegram Bot Service](https://github.com/sourcesimian/txTelegramBot)
    - [telebot](https://github.com/yukuku/telebot)
+ + JavaScript
+   - [telegraf](https://github.com/telegraf/telegraf)
+   - [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api)
  + Java
    - [TelegramBots](https://github.com/rubenlagus/TelegramBots)
  + C#
@@ -37,19 +42,23 @@
    - [lua-telegram-bot](https://github.com/cosmonawt/lua-telegram-bot)
  + Haskell
    - [haskell-telegram-api](https://github.com/klappvisor/haskell-telegram-api)
- + JavaScript
-   - [telegraf](https://github.com/telegraf/telegraf)
-   - [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api)
+
+
+---
+
 
 ### Особенности работы с Bot API
-В этом разделе описаны различные хитрости и неочевидные способы работы с Bot API, которые помогут вам упростить разработку или восполнить какое-либо ограничение в API.
+
+##### В этом разделе описаны различные хитрости и неочевидные способы работы с Bot API, которые помогут вам упростить разработку или восполнить какое-либо ограничение в API.
 
 #### Отправка Фото с большой подписью
+
+Технически Bot API не позволяет отправлять фото с подписью более 200 символов. Но мы можем воспользоваться тем, что ссылки на изображения образуют _предпросмотр_. Этим можно воспользоваться оставив в скрытом HTML символе ссылку на картинку \(главное не забыть указать разметку HTML в параметре `parse_mode`\)
 ```HTML
 "​​<a href="ссылка_на_картинку">&#8203;</a>
 Lorem ipsum dolor sit amet..."
 ```
-![Hidden link](http://telegra.ph/file/710a5455ca5a1e09d7be7.png)
+![](http://telegra.ph/file/710a5455ca5a1e09d7be7.png)
 
 #### Бесплатный хостинг картинок
 POST HTTP запрос `http://telegra.ph/upload`
@@ -74,8 +83,13 @@ with open('/Users/python273/Desktop/123345.jpeg', 'rb') as f:
 ```
 
 #### Убираем часики на inline-кнопках
-![answerCallbackQuery](http://telegra.ph/file/b61e25a0a3f81f157eecf.png)
-Причина возникновения этих часиков - ожидание Телеграмом ответа от бота после нажатия пользователем на кнопку. Чтобы убрать эти часики после обработки нажатия, нужно вызвать метод [answerCallbackQuery](https://core.telegram.org/bots/api#answercallbackquery)
+![](http://telegra.ph/file/b61e25a0a3f81f157eecf.png)
+
+Причина возникновения этих _часиков_ - ожидание Телеграмом ответа от бота после нажатия пользователем на кнопку. Чтобы эти часики не зависали, после обработки нажатия нужно вызвать метод [answerCallbackQuery](https://core.telegram.org/bots/api#answercallbackquery)
+
+
+---
+
 
 ### Лимиты Telegram Bot API
 
@@ -88,38 +102,40 @@ with open('/Users/python273/Desktop/123345.jpeg', 'rb') as f:
  + Файлы:
  	- Максимальный размер файла для скачивания 20 MB.
 
-  - Максимальный размер файла для загрузки (отправки) 50 MB.
+  - Максимальный размер файла для отправки 50 MB.
 
 
+---
 
 
-## Telegram client API(он же MTProto, он же tgcli)
+## Telegram client API (он же MTProto, он же tgcli)
 Клиентское API телеграма - это API позволяющее вам выполнять автоматизированные действия от лица клиента.
-Иными словами, всё, что может делать юзер в телеграме, можно запрограммировать на tgcli(получить всю историю группы,
-получить всех пользователей группы, сделать поиск в группе по словам, взаимодействовать с ботом и [т.д и т.п](http://stek29.rocks/tl-schema/latest/)).
-Так как Telegram client api предполагает написание скриптов на tl(поверьте, вы не хотите на нём [писать](https://tlgrm.ru/docs/mtproto/TL)), то получили распространение обёртки над tgcli для разных языков.
-Их список можно увидеть ниже.
-### Список популярных библиотек:
+Иными словами, всё, что может делать пользователь в телеграме, можно запрограммировать на tgcli \(получить всю историю сообщений в группе,
+получить список всех пользователей группы, сделать поиск в группе по словам, взаимодействовать с ботами и [т.д и т.п](http://stek29.rocks/tl-schema/latest/)\).
+Так как Telegram client api предполагает написание скриптов на tl \(поверьте, вы не хотите на нём [писать](https://tlgrm.ru/docs/mtproto/TL)\), то получили распространение обёртки над tgcli для разных языков.
+
+
+### Список популярных клиентских библиотек:
 + Python:
   - [Telethon](https://github.com/LonamiWebs/Telethon)
-  - [pyrogram](https://github.com/pyrogram/pyrogram)  
+  - [pyrogram](https://github.com/pyrogram/pyrogram)
++ JavaScript:
+  - [telegram-mtproto](https://github.com/zerobias/telegram-mtproto)
 + Rust:
   - [Vail](https://github.com/JuanPotato/Vail)
-  - [mtproto-rs](https://github.com/Connicpu/mtproto-rs)  
+  - [mtproto-rs](https://github.com/Connicpu/mtproto-rs)
 + PHP:
-  - [MadelineProto](https://github.com/danog/MadelineProto)  
+  - [MadelineProto](https://github.com/danog/MadelineProto)
 + Kotlin:
-  - [kotlogram](https://github.com/badoualy/kotlogram)  
-+ JavaScript:
-  - [telegram-mtproto](https://github.com/zerobias/telegram-mtproto)  
+  - [kotlogram](https://github.com/badoualy/kotlogram)
 + C:
   - [tg](https://github.com/vysheng/tg)
   - [tdcli](https://bitbucket.org/vysheng/tdcli)  
 + Elixir:
   - [1664390](https://gitlab.com/snippets/1664390)
   - [telegram-mt-elixir](https://github.com/Fnux/telegram-mt-elixir)
-  - [telegram-tl-elixir](https://github.com/Fnux/telegram-tl-elixir)  
+  - [telegram-tl-elixir](https://github.com/Fnux/telegram-tl-elixir)
 + C#:
-  - [unigram](https://github.com/unigramdev/unigram)  
+  - [unigram](https://github.com/unigramdev/unigram)
 + Go:
-  - [mtproto](https://github.com/sdidyk/mtproto)  
+  - [mtproto](https://github.com/sdidyk/mtproto)
