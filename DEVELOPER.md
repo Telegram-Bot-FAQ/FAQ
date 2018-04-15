@@ -42,7 +42,7 @@
  + Ruby
    - [TelegramBot](https://github.com/eljojo/telegram_bot)
  + Go
-   - [TBotAPI](https://github.com/mrd0ll4r/tbotapi)
+   - [tgbotapi](https://github.com/go-telegram-bot-api/telegram-bot-api)
  + Lua
    - [lua-telegram-bot](https://github.com/cosmonawt/lua-telegram-bot)
  + Haskell
