@@ -37,6 +37,7 @@
    - [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api)
  + Java
    - [TelegramBots](https://github.com/rubenlagus/TelegramBots)
+   - [Java Telegram Bot API](https://github.com/pengrad/java-telegram-bot-api)
  + PHP
    - [PHP Telegram Bot](https://github.com/php-telegram-bot/core)
  + C#
