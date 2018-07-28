@@ -22,6 +22,8 @@
 - Текстовые уроки "Асинхронный Telegram бот на языке Python 3" с использованием библиотеки [aiogram](https://github.com/aiogram/aiogram):
 
  https://surik00.gitbooks.io/aiogram-lessons/content/
+ 
+- [Реализация реферальной системы на Python с pyTelegramBotApi.](https://github.com/P-Alban/FAQ-1/tree/patch-5/referral%20system%20example)
 
 ### Список популярных библиотек:
  + Python
