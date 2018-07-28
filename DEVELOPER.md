@@ -23,7 +23,7 @@
 
  https://surik00.gitbooks.io/aiogram-lessons/content/
  
-- [Реализация реферальной системы на Python с pyTelegramBotApi.](https://github.com/P-Alban/FAQ-1/tree/patch-5/referral%20system%20example)
+- [Реализация реферальной системы на Python с pyTelegramBotApi.](referral%20system%20example/)
 
 ### Список популярных библиотек:
  + Python
