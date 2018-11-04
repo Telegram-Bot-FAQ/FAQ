@@ -25,6 +25,8 @@
  
 - [Реализация реферальной системы на Python с pyTelegramBotApi.](referral%20system%20example/)
 
+- Деплой бота на различных бесплатных серверах: https://github.com/heyyyoyy/deploy-your-bot-everywhere
+
 ### Список популярных библиотек:
  + Python
    - [pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI) - отлично подходит для начинающих, желающих понять основы работы с Bot API. Имеет подробную документацию (на английском языке) и обширную аудиторию.
