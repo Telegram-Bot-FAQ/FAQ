@@ -29,8 +29,8 @@
 
 ### Список популярных библиотек:
  + Python
-   - [pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI) - отлично подходит для начинающих, желающих понять основы работы с Bot API. Имеет подробную документацию (на английском языке) и обширную аудиторию.
-   - [aiogram](https://github.com/aiogram/aiogram) - продвинутая библиотека для создания высокопроизводительных ботов. Библиотека постоянно обновляется и имеет крутые фишки, например [FSM](https://ru.wikipedia.org/wiki/Конечный_автомат), установку стандартного типа разметки и прочие полезные мелочи, полезные при разработке. Аудитория пользователей библиотеки на данный момент небольшая.
+   - [pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI) - отлично подходит для начинающих, желающих понять основы работы с Bot API. Имеет подробную документацию (на английском языке) и обширное комьюнити.
+   - [aiogram](https://github.com/aiogram/aiogram) - продвинутая библиотека для создания высокопроизводительных ботов. Библиотека постоянно обновляется и имеет крутые фишки, например [FSM](https://ru.wikipedia.org/wiki/Конечный_автомат), установку стандартного типа разметки и прочие полезные мелочи, полезные при разработке. Комьюнити библиотеки на данный момент небольшое.
    - [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot)
    - [twx.botapi](https://github.com/datamachine/twx.botapi)
    - [Telepot](https://github.com/nickoala/telepot)
@@ -70,9 +70,13 @@ _
 
 **A:** Бесплатно можно на Heroku, есть [инструкция](https://github.com/Kylmakalle/heroku-telegram-bot).
 Более удобный способ - купить VPS \(Virtual Private Server\). Это виртуальная машина, на которой можно запустить бота ровно так же, как и на своём компьтере.
-Самый дешевый вариант - Aruba, просят 1 евро в месяц, есть 2 бесплатных месяца: https://www.arubacloud.com/free-trial.aspx
 
-_
+Список некоторых хостинг-провайдеров:
+- [OVH](https://www.ovh.ie/)
+- [DigitalOcean](https://www.digitalocean.com/)
+- [Aruba](https://www.arubacloud.com/)
+- [Vultr](https://www.vultr.com/)
+- [Hetzner](https://www.hetzner.com/cloud)
 
 **Q:** Как сделать, чтобы бот _ждал_ от пользователя следующее сообщение?
 
