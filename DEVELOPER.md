@@ -109,7 +109,7 @@ Lorem ipsum dolor sit amet..."
 POST HTTP запрос `http://telegra.ph/upload`
 
 Поддерживаемые типы медиафайлов:
-`image/gif, image/jpeg, image/jpg, image/png, video/mp4`
+`image/gif, image/jpeg, image/jpg, image/png, video/mp4, video/ogg, video/mpeg`
 
 **Примеры:**
 - Python
@@ -121,7 +121,7 @@ import requests
 with open('/Users/python273/Desktop/123345.jpeg', 'rb') as f:
     print(
         requests.post(
-            'http://telegra.ph/upload',
+            'https://telegra.ph/upload',
             files={'file': ('file', f, 'image/jpeg')}
         ).json()
     )
