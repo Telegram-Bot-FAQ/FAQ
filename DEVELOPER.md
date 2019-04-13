@@ -42,6 +42,8 @@
  + Java
    - [TelegramBots](https://github.com/rubenlagus/TelegramBots)
    - [Java Telegram Bot API](https://github.com/pengrad/java-telegram-bot-api)
+ + Kotlin
+   - [TelegramBotAPI](https://github.com/InsanusMokrassar/TelegramBotAPI) - не самая простая библиотека, задачей которой стоит в разграничении функционала через применение объектной ориентированности
  + PHP
    - [PHP Telegram Bot](https://github.com/php-telegram-bot/core)
  + C#
