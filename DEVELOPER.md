@@ -41,7 +41,7 @@
    - [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api)
  + Java
    - [TelegramBots](https://github.com/rubenlagus/TelegramBots)
-   - [Java Telegram Bot API](https://github.com/pengrad/java-telegram-bot-api)
+   - [Java Telegram Bot API](https://github.com/pengrad/java-telegram-bot-api) - библиотека, которая регулярно обновляется и имеет приятные дополнения, например поддержку шифрования для Telegram Passport. Автор призывает подключаться к разработке, отвечает на все вопросы и пулл-реквесты.
  + Kotlin
    - [TelegramBotAPI](https://github.com/InsanusMokrassar/TelegramBotAPI) - не самая простая библиотека, использует объектно-ориентированный подход
  + PHP
