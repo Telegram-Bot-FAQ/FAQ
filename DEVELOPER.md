@@ -17,7 +17,7 @@
 
 - Текстовые уроки "Пишем бота для Telegram на языке Python" с использованием библиотеки [pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI):
 
- https://groosha.gitbooks.io/telegram-bot-lessons/content/
+ http://mastergroosha.github.io/telegram-tutorial/
 
 - Текстовые уроки "Асинхронный Telegram бот на языке Python 3" с использованием библиотеки [aiogram](https://github.com/aiogram/aiogram):
 
