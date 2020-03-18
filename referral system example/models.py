@@ -14,7 +14,7 @@ class Users(BaseModel):
 
     @classmethod
     def get_user(cls, user_id):
-        return cls.get(user_id == user_id)
+        return cls.get(user_id = user_id)
 
     @classmethod
     def get_ref_count(cls, user_id):
