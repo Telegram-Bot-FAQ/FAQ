@@ -35,5 +35,4 @@ class Users(BaseModel):
     def create_user(cls, user_id):
         user, created = cls.get_or_create(user_id=user_id)
 
-# создаём таблицы, запустить 1 раз и закомментировать
-# db.create_tables([Users])
+db.create_tables([Users], safe=True)
