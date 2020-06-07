@@ -36,6 +36,8 @@
    - [Telepot](https://github.com/nickoala/telepot)
    - [Telegram Bot Service](https://github.com/sourcesimian/txTelegramBot)
    - [telebot](https://github.com/yukuku/telebot)
+   - [Keyboa](https://github.com/torrua/keyboa) - дополнение к библиотеке [pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI), позволяющее быстро создавать inline-клавиатуры любой сложности, объединять несколько клавиатур в одну или генерировать их динамичеки. Имеет подробное описание с примерами.
+
  + JavaScript
    - [telegraf](https://github.com/telegraf/telegraf)
    - [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api)
