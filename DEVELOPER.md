@@ -36,7 +36,7 @@
    - [Telepot](https://github.com/nickoala/telepot)
    - [Telegram Bot Service](https://github.com/sourcesimian/txTelegramBot)
    - [telebot](https://github.com/yukuku/telebot)
-   - [Keyboa](https://github.com/torrua/keyboa) - дополнение к библиотеке [pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI), позволяющее быстро создавать inline-клавиатуры любой сложности, объединять несколько клавиатур в одну или генерировать их динамичеки. Имеет подробное описание с примерами.
+   - [Keyboa](https://github.com/torrua/keyboa) - дополнение к библиотеке [pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI), позволяющее быстро создавать inline-клавиатуры любой сложности, объединять несколько клавиатур в одну или генерировать их динамически. Имеет подробное описание с примерами.
 
  + JavaScript
    - [telegraf](https://github.com/telegraf/telegraf)
@@ -175,6 +175,12 @@ with open('/Users/python273/Desktop/123345.jpeg', 'rb') as f:
  	- Максимальный размер файла для скачивания 20 MB.
   
    -  Максимальный размер файла для отправки 50 MB.
++ Инлайн-клавиатура (InlineKeyboardMarkup):
+  - Максимальное число кнопок в строке - 8.
+
+  - Максимальное число кнопок всего - 100.
++ Кнопка инлайн-клавиатуры (InlineKeyboardButton):
+  - Максимальная длина колбека (callback_data) - 64 байта.
 
 ---
 
