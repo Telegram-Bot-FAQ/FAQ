@@ -41,6 +41,7 @@
  + JavaScript
    - [telegraf](https://github.com/telegraf/telegraf)
    - [node-telegram-bot-api](https://github.com/yagop/node-telegram-bot-api)
+   - [urban-bot](https://github.com/urban-bot/urban-bot) - написание бота через React.js компоненты.
  + Java
    - [TelegramBots](https://github.com/rubenlagus/TelegramBots)
    - [Java Telegram Bot API](https://github.com/pengrad/java-telegram-bot-api) - библиотека, которая регулярно обновляется и имеет приятные дополнения, например поддержку шифрования для Telegram Passport. Автор призывает подключаться к разработке, отвечает на все вопросы и пулл-реквесты.
