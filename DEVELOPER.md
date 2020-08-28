@@ -138,6 +138,8 @@ POST HTTP запрос `http://telegra.ph/upload`
 Поддерживаемые типы медиафайлов:
 `image/gif, image/jpeg, image/jpg, image/png, video/mp4, video/ogg, video/mpeg`
 
+Максимальный размер файла: 5 242 880 байт/5 МБайт
+
 **Примеры:**
 - Python
 
