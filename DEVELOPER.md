@@ -27,6 +27,10 @@
 
 - Деплой бота на различных бесплатных серверах: https://github.com/deploy-your-bot-everywhere/deploy-your-bot-everywhere
 
+- Видеоуроки "Разработка Телеграм бота на Python" с использованием библиотеки [aiogram](https://github.com/aiogram/aiogram):
+
+https://www.youtube.com/playlist?list=PLwVBSkoL97Q3phZRyInbM4lShvS1cBl-U
+
 ### Список популярных библиотек:
  + Python
    - [pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI) - отлично подходит для начинающих, желающих понять основы работы с Bot API. Имеет подробную документацию (на английском языке) и обширное комьюнити.
